@@ -21,12 +21,5 @@ namespace InMemoryCachingAPI.Controllers
             var products = _service.GetAllProducts();
             return Ok(products);
         }
-        [HttpGet("{id}")]
-        public ActionResult<Product> Get(int id)
-        {
-            var product = _service.GetProduct(id);
-            return Ok(product);
-        }
-
     }
 }
